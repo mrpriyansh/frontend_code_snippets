@@ -17,7 +17,7 @@ jobs:
                   yarn run predeploy
                   yarn run deploy-storybook
 
-            - name: Deploy
-            - uses: actions/labeler@v2
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@3.6.2
               with:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
