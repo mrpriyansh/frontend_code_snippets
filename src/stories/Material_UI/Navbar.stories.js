@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "../Button";
+import { Button } from "../example/Button";
 import NavBar from "./Navbar/Template";
 
 export default {
@@ -9,8 +9,36 @@ export default {
     argTypes: {},
 };
 const menu = [
-    { menuName: "Tab 1", component: <div>Tab 1 lorem ipsusm</div> },
-    { menuName: "Tab 2", component: <div>Tab 2 lorem ipsusm</div> },
+    {
+        menuName: "Tab 1",
+        component: (
+            <div
+                style={{
+                    height: "200px",
+                    border: "1px solid black",
+                    marginTop: "1em",
+                    padding: "0.5em",
+                }}
+            >
+                Tab 1 lorem ipsusm
+            </div>
+        ),
+    },
+    {
+        menuName: "Tab 2",
+        component: (
+            <div
+                style={{
+                    height: "200px",
+                    border: "1px solid black",
+                    marginTop: "1em",
+                    padding: "0.5em",
+                }}
+            >
+                Tab 2 lorem ipsusm
+            </div>
+        ),
+    },
 ];
 
 const Template = (args) => <NavBar {...args} />;
