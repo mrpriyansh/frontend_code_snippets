@@ -1,20 +1,18 @@
-// .github/workflows/storybook.yml
-name: Publish stories 
-
-on: 
-  push:
-    branches:
-      - master
+name: Publish stories
+on:
+    push:
+        branches:
+            - master
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@master
 
-    - name: Install and Build
-      run: |
-        yarn 
-        yarn run predeploy
-        yarn run deploy-storybook
+            - name: Install and Build
+              run: |
+                  yarn 
+                  yarn run predeploy
+                  yarn run deploy-storybook
