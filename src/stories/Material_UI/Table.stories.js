@@ -2,7 +2,7 @@ import React from "react";
 
 // import CustomTable from "./Table/Template";
 import { data, rows, columns } from "./Table/generateData";
-import { Button } from "../Button";
+import { Button } from "../example/Button";
 import CustomTable from "./Table/Template";
 
 export default {
